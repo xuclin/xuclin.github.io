@@ -1,0 +1,41 @@
+/*reset 2016-6-20 16:06:43*/
+
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, input, form, a, p, textarea {
+    margin: 0;
+    padding: 0;
+    font-family: "MicrosoftYaHei", Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-size: 12px;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    font-family: "SimHei", "Microsoft Yahei", "Arial";
+    text-decoration: none;
+    color: white;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}

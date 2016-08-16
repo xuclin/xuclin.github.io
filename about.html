@@ -1,0 +1,127 @@
+---
+layout: page
+title: "关于"
+description: "Hey, this is Nan."
+header-img: "img/about-bg.jpg"
+---
+
+<!-- Language Selector -->
+<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英语 English </option>
+</select>
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+    <blockquote>
+        写写代码，做做设计，看看产品。
+        世界那么大，多走走多看看。
+    </blockquote>
+    总是听到这样的言论，“要是高中好好学就好了”、“要是大学好好学就好了”、“要是多看看书就好了”等等。我以前也这么后悔过，不过有一天意识到：大学的时候后悔高中没好好学，工作以后后悔大学没好好学，工作遇到瓶颈后悔刚工作的几年没多看看书，如果你只是这么想而不去想办法努力并改变的话，三年以后，你会后悔现在没好好学，六年以后，你会后悔三年前没好好学，很多人的一生，就是这么蹉跎的吧。<br><br>很喜欢写代码和学习计算机科学相关的内容，希望新年能有突破。换了新机器后把机器名改成了lunar mare，也就是月海，这个词是早期的天文爱好者观察月球时，受限于器材和知识，认为月球表面有美丽的海洋，但实际上那些只是类似于盆地的地貌。计算机科学也是这样类似的东西，远远望着觉得很神奇很精彩，接触之后会发现看起来十分乏味和贫瘠，但是当你深入研究之后，才能真正的热爱上这个学科。 <br><br>突然想起一件小事，随手记在这里，北航六十年校庆的时候去玩，在学校里面的航空博物馆看神舟七号发射的动画演示，运载火箭从上到下包括逃逸塔，整流罩，多节火箭，助推器等等，发射过程要逐步的脱落。旁边两个学生，看样子像情侣，他们的对话很有意思，顿时让我想起“男人来自金星，女人来自火星”这句话。<br><br><i> 火箭助推器脱落</i><br><i> 女（呆萌脸）：呀，脚没了</i><br><i> 男（正经脸）：嗯，火箭的四个助推器脱落了</i><br><i> 火箭逃逸塔脱落</i><br><i>  女（呆萌脸）：呀，头没了</i><br><i>  男（正经脸）：嗯，火箭要抛掉逃逸塔，这个是用来救生的</i><br><i>一级火箭脱落</i>
+    <br><i> 女（呆萌脸）：呀，腿也没了</i><br><i> 男（正经脸）：嗯，一级火箭脱落，二级火箭要开机了</i><br><i> 火箭整流罩脱落</i><br><i> 女（呆萌脸）：哎呀，脖子也掉了</i><br><i> 男（正经脸）：嗯，火箭要抛掉整流罩，这个会被回收回来，里面的黑匣子记录有数据</i><br><i>星箭分离</i><br><i>  女（呆萌脸）：呀，肚子也没了</i><br><i>  男（正经脸）：嗯，二级火箭关机，要星箭分离</i><br><br><i>然后女生蹦蹦跳跳走了，男生在后面老老实实跟着</i>
+
+    <p style="text-align:right;">
+        —— <a href="http://blog.codepiano.com/2013/12/31/time-to-say-goodbye/" target="_blank"> 溯洄于时光的洪流 </a>
+    </p>
+
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    <blockquote>
+        Designer or Engineer, things in between.
+    </blockquote>
+
+    <p>
+        Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you find it.
+    </p>
+
+    <p>
+    If you want to live your life in a creative way, as an artist, you have to not look back too much. You have to be willing to take whatever you’ve done and whoever you were and throw them away.
+    </p>
+
+    <p style="text-align:right;">
+    -- Steve Jobs
+    </p>
+
+</div>
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    function onLanChange(index){
+        if(index == 0){
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }else{
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        }
+    }
+    onLanChange(0);
+</script>
+
+
+
+{% if site.duoshuo_username %}
+<!-- 多说评论框 start -->
+<div class="comment">
+    <div class="ds-thread"
+    {% if site.duoshuo_username == "huxblog" %}
+        data-thread-id="1187623191091085319"
+    {% else %}
+        data-thread-key="{{site.duoshuo_username}}/about"
+    {% endif %}
+
+    data-title="{{page.title}}"
+    data-url="{{site.url}}/about/"></div>
+</div>
+<!-- 多说评论框 end -->
+
+<!-- Duoshuo hacking -->
+<input id="dsUser" type="hidden" value="{{site.duoshuo_username}}"  />
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User hacking by Hux
+    var _user = document.getElementById('dsUser').value;
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+{% endif %}
+
+
+{% if site.disqus_username %}
+<!-- disqus 评论框 start -->
+<div class="comment">
+    <div id="disqus_thread" class="disqus-thread">
+
+    </div>
+</div>
+<!-- disqus 评论框 end -->
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "{{site.disqus_username}}";
+    var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+{% endif %}

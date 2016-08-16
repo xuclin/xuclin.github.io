@@ -1,0 +1,28 @@
+.wrap {
+    width: 400px;
+    height: 200px;
+    background: #ccc;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    top: 50%;
+    margin-top: -100px;
+}
+
+.left {
+    width: 50px;
+    height: 50px;
+    border-bottom-right-radius: 50px;
+    background: #fc0;
+}
+
+.right {
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 50px;
+    background: #fc0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}

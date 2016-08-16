@@ -1,0 +1,68 @@
+---
+layout:     post
+title:      "一些练习"
+subtitle:   "展示"
+date:       2016-06-30
+author:     "nan"
+header-img: "img/home-bg-art.jpg"
+catalog:    true
+tags:
+    - 展示
+---
+
+
+
+
+----------
+
+
+说明：
+
+多数解决方案都不是唯一的，这和我们在实际工作中的情况也是一致的。因此，我们的要求不仅仅是实现设计稿的效果，更是要多去思考不同的解决方案，评估不同方案的优劣，然后使用在该场景下最优雅的方式去实现。那些最终没有被我们采纳的方案，同样也可以帮助我们学到很多知识。所以，我们列出的参考资料未必是实现需求所必须的。有的时候，实现题目的要求很简单，甚至参考资料里就有，但是背后的思考和亲手去实践却是任务最关键的一部分。
+
+
+
+
+----------
+
+- 普通页面 [http://richard0914.github.io/code/stage01/task_1_5.html](http://richard0914.github.io/code/stage01/task_1_5.html)
+
+----------
+
+- 使用HTML/CSS实现一个复杂页面 [http://richard0914.github.io/code/stage01/task_1_09_1.html](http://richard0914.github.io/code/stage01/task_1_09_1.html)
+
+----------
+
+
+-  模拟报纸排版 [http://richard0914.github.io/code/stage01/task_1_6.html](http://richard0914.github.io/code/stage01/task_1_6.html)
+
+----------
+
+- 常见的技术产品官网 [http://richard0914.github.io/code/stage01/task_1_7.html](http://richard0914.github.io/code/stage01/task_1_7.html)
+
+
+----------
+
+
+- 漂亮的bootstrap 练习[http://richard0914.github.io/code/upms-bootstrap/index.html](http://richard0914.github.io/code/upms-bootstrap/index.html)
+
+----------
+
+- 移动Web页面布局实践  `待完成ing`
+
+----------
+- 仿饿了吗官网 [http://richard0914.github.io/code/eleme/index.html](http://richard0914.github.io/code/eleme/index.html)
+
+----------
+- 定位和居中问题 [http://richard0914.github.io/code/stage01/task_1_4.html](http://richard0914.github.io/code/stage01/task_1_4.html)
+
+----------
+
+-  响应式布局 [http://richard0914.github.io/code/stage01/task_1_8.html](http://richard0914.github.io/code/stage01/task_1_8.html)
+
+----------
+- JavaScript 简单 [http://richard0914.github.io/code/stage02/task_16.html](http://richard0914.github.io/code/stage02/task_16.html)
+
+----------
+
+

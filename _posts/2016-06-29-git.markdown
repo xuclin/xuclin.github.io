@@ -1,0 +1,139 @@
+---
+layout:     post
+title:      "Git命令"
+subtitle:   "30 分钟 git 命令入门"
+date:       2016-06-30
+author:     "nan"
+header-img: "img/post-git.jpg"
+catalog:    true
+tags:
+    - Git
+---
+
+
+----------
+
+
+git 现在的火爆程度非同一般，它被广泛地用在大型开源项目，团队开发，以及独立开发者，甚至学生之中。
+
+初学者非常容易被各种命令，参数吓哭。但实际上刚上手你并不需要了解所有命令的用途。你可以从掌握一些简单，强大的命令开始，逐步去学习。（这就是这篇文章要讲的）。好了，上来！
+
+
+# 基本了解 #
+
+git命令是一些命令行工具的集合，它可以用来跟踪，记录文件的变动。比如你可以进行保存，比对，分析，合并等等。这个过程被称之为版本控制。已经有一系列的版本控制系统，比如SVN, Mercurial, Perforce, CVS, Bitkeepe等等。
+
+Git是分布式的，这意味着它并不依赖于中心服务器，任何一台机器都可以有一个本地版本的控制系统，我们称之为仓库。如果是多人协作的话，你需要还需要一个线上仓库，用来同步信息。这就是GitHub, BitBucket的工作。
+
+## 1.安装Git ##
+
+windows下安装和普通软件一样，下一步下一步就可以了。
+ 推荐使用git for windows，它包括了图形工具以及命令行模拟器。
+
+## 2.配置Git ##
+安装完git,首要任务是配置我们的信息，最重要的是用户名及邮箱，打开终端，执行以下命令。
+    
+    $ git config --global user.name "My Name"
+    $ git config --global user.email myEmail@example.com
+
+配置好这两项，用户就能知道谁做了什么，并且一切都更有组织性了不是吗？
+## 3.创建一个新仓库 – git init ##
+
+git 会把所有文件以及历史记录保存在你的项目中，创建一个新的仓库，首先要去到项目路径，执行 git init。然后git会创建一个隐藏的文件夹.git，所有的信息都储存在其中。
+
+在桌面创建一个联系文件夹 git_exercise, 打开终端：
+
+    $ cd Desktop/git_exercise/
+    $ git init
+
+OK，现在项目还什么都没有，新建一个 hello.txt 文件试试~
+
+## 4.检查状态 – git status ##
+
+git status 是另一个非常重要的命令，它会告诉我们创库的当前状态：是否为最新代码，有什么更新等等执行git status:
+
+
+    $ git status
+     
+    On branch master
+     
+    Initial commit
+     
+    Untracked files:
+      (use "git add ..." to include in what will be committed)
+     
+    	hello.txt
+
+
+git 告诉我们，hello.txt尚未跟踪，这是因为这个文件是新的，git不知道是应该跟踪它的变动呢，还是直接忽略不管呢。为了跟踪我们的新文件，我们需要暂存它。
+
+## 5.暂存 – git add ##
+
+git 有个概念叫 暂存区，你可以把它看成一块空白帆布，包裹着所有你可能会提交的变动。它一开始为空，你可以通过 git add 命令添加内容，并使用 git commit 提交。
+
+这个例子中只有一个文件：
+    	
+    $ git add hello.txt
+如果需要提交目录下的所有内容，可以这样：
+	
+    $ git add -A
+
+再次使用git status查看：
+    $ git status
+     
+    On branch master
+     
+    Initial commit
+     
+    Changes to be committed:
+      (use "git rm --cached ..." to unstage)
+     
+    	new file:   hello.txt
+
+我们的文件已经提交了。状态信息还会告诉我们暂存区文件发生了什么变动，不过这里我们提交的是一个全新文件。
+
+## 6.提交 – git commit ##
+
+一次提交代表着我们的仓库到了一个交付状态，通常是完成了某一块小功能。它就像是一个快照，允许我们像使用时光机一样回到旧时光。
+
+创建提交，需要我们提交东西到暂存区（git add），然后：
+
+    	
+    $ git commit -m "Initial commit."
+
+这就创建了一次提交，-m “Initial commit.”表示对这次提交的描述，建议使用有意义的描述性信息。
+
+# 远端仓库 #
+
+到目前为止，我们的操作都是在本地的，它存在于.git文件中。为了能够协同开发，我们需要把代码发布到远端仓库上。
+
+## 1.链接远端仓库 – git remote add ##
+
+为了能够上传到远端仓库，我们需要先建立起链接，远端仓库可以使Github, BitBucket上搭建的，自己一步一步尝试。 添加测试用的远端仓库
+
+    $ git remote add origin https://github.com/tutorialzine/awesome-project.git
+
+一个项目可以同时拥有好几个远端仓库为了能够区分，通常会起不同的名字。通常主远端仓库被称为origin。
+## 2.上传到服务器 – git push ##
+
+每次我们要提交代码到服务器上时，都会使用到git push。
+
+git push命令会有两个参数，远端仓库的名字，以及分支的名字：
+
+
+    $ git push origin master
+     
+    Counting objects: 3, done.
+    Writing objects: 100% (3/3), 212 bytes | 0 bytes/s, done.
+    Total 3 (delta 0), reused 0 (delta 0)
+    To https://github.com/tutorialzine/awesome-project.git
+     * [new branch]  master -> master
+
+
+取决于你使用的服务器，push过程你可能需要验证身份。如果没有出差错，现在使用浏览器去你的远端分支上看，hello.txt已经在那里等着你了。
+    
+
+
+
+
+> 未完待续 .....

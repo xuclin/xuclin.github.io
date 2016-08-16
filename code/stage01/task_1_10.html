@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Flexbox 布局练习</title>
+    <style>
+        @media screen and  (min-width: 640px) {
+            .box {
+                border: 1px solid #ccc;
+                padding: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+
+        @media screen and  (max-width: 640px){
+            .box{
+                border: 1px solid #ccc;
+                padding: 20px;
+                display: flex;
+
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .four{
+                order: -1;
+            }
+
+        }
+        .one, .two, .three, .four{
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .one{
+            height: 120px;
+            background: #f00;
+        }
+
+        .two{
+            height: 100px;
+            background: #ff6310;
+        }
+        .three {
+            height: 40px;
+            background: #f0551d;
+        }
+
+        .four{
+            height: 200px;
+            background: #00f;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+</div>
+</body>
+</html>
