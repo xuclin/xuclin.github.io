@@ -1,8 +1,8 @@
 # Site settings
-title: xuclin
-SEOTitle: xuclin
+title: 林
+SEOTitle: 林
 header-img: img/home-bg.jpg
-email: 50326921@qq.com
+email: xuclin@sina.cn
 description: "Cool Blog"
 keyword: ""
 url: "http://www.xuclin.com"              # your host, for absolute URL
@@ -12,11 +12,11 @@ baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings
 RSS: false
-# weibo_username:     nangit
-zhihu_username:     nangit
-github_username:    richard0914
+# weibo_username:     xuclin
+zhihu_username:     xuclin
+github_username:    xuclin
 #twitter_username:  
-# facebook_username:  nangit
+# facebook_username:  
 
 
 
@@ -67,7 +67,7 @@ ba_track_id: 33239a68fe999b28c08d74eaba725320
 
 
 # Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
+sidebar: false                           # whether or not using Sidebar.
 sidebar-about-description: "在人生的道路上，当你的希望一个个落空的时候，你也要坚定，要沉着"
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
