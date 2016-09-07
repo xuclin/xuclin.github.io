@@ -25,43 +25,43 @@ tags:
 
 ----------
 
-- 普通页面 [http://richard0914.github.io/code/stage01/task_1_5.html](http://richard0914.github.io/code/stage01/task_1_5.html)
+- 普通页面 [http://xuclin.github.io/code/stage01/task_1_5.html](http://xuclin.github.io/code/stage01/task_1_5.html)
 
 ----------
 
-- 使用HTML/CSS实现一个复杂页面 [http://richard0914.github.io/code/stage01/task_1_09_1.html](http://richard0914.github.io/code/stage01/task_1_09_1.html)
-
-----------
-
-
--  模拟报纸排版 [http://richard0914.github.io/code/stage01/task_1_6.html](http://richard0914.github.io/code/stage01/task_1_6.html)
-
-----------
-
-- 常见的技术产品官网 [http://richard0914.github.io/code/stage01/task_1_7.html](http://richard0914.github.io/code/stage01/task_1_7.html)
-
+- 使用HTML/CSS实现一个复杂页面 [http://xuclin.github.io/code/stage01/task_1_09_1.html](http://xuclin.github.io/code/stage01/task_1_09_1.html)
 
 ----------
 
 
-- 漂亮的bootstrap 练习[http://richard0914.github.io/code/upms-bootstrap/index.html](http://richard0914.github.io/code/upms-bootstrap/index.html)
+-  模拟报纸排版 [http://xuclin.github.io/code/stage01/task_1_6.html](http://xuclin.github.io/code/stage01/task_1_6.html)
+
+----------
+
+- 常见的技术产品官网 [http://xuclin.github.io/code/stage01/task_1_7.html](http://xuclin.github.io/code/stage01/task_1_7.html)
+
+
+----------
+
+
+- 漂亮的bootstrap 练习[http://xuclin.github.io/code/upms-bootstrap/index.html](http://xuclin.github.io/code/upms-bootstrap/index.html)
 
 ----------
 
 - 移动Web页面布局实践  `待完成ing`
 
 ----------
-- 仿饿了吗官网 [http://richard0914.github.io/code/eleme/index.html](http://richard0914.github.io/code/eleme/index.html)
+- 仿饿了吗官网 [http://xuclin.github.io/code/eleme/index.html](http://xuclin.github.io/code/eleme/index.html)
 
 ----------
-- 定位和居中问题 [http://richard0914.github.io/code/stage01/task_1_4.html](http://richard0914.github.io/code/stage01/task_1_4.html)
+- 定位和居中问题 [http://xuclin.github.io/code/stage01/task_1_4.html](http://xuclin.github.io/code/stage01/task_1_4.html)
 
 ----------
 
--  响应式布局 [http://richard0914.github.io/code/stage01/task_1_8.html](http://richard0914.github.io/code/stage01/task_1_8.html)
+-  响应式布局 [http://xuclin.github.io/code/stage01/task_1_8.html](http://xuclin.github.io/code/stage01/task_1_8.html)
 
 ----------
-- JavaScript 简单 [http://richard0914.github.io/code/stage02/task_16.html](http://richard0914.github.io/code/stage02/task_16.html)
+- JavaScript 简单 [http://xuclin.github.io/code/stage02/task_16.html](http://xuclin.github.io/code/stage02/task_16.html)
 
 ----------
 
