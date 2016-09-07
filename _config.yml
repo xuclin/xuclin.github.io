@@ -2,7 +2,7 @@
 title: xuclin
 SEOTitle: xuclin
 header-img: img/home-bg.jpg
-email: 50326921@qq.com
+email: xuclin@sina.cn
 description: "Cool Blog"
 keyword: ""
 url: "http://www.xuclin.com"              # your host, for absolute URL
@@ -12,11 +12,11 @@ baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings
 RSS: false
-# weibo_username:     nangit
-zhihu_username:     nangit
-github_username:    richard0914
+# weibo_username:     xuclin
+zhihu_username:     徐超林
+github_username:    xuclin
 #twitter_username:  
-# facebook_username:  nangit
+# facebook_username:  
 
 
 
@@ -82,8 +82,8 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 # friends: [
 #     {
-#         title: "Hux Blog",
-#         href: "http://huangxuan.me"
+#         title: "",
+#         href: "#"
 #     },{
 #         title: "Foo",
 #         href: "#"
