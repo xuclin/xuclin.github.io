@@ -3,7 +3,7 @@ layout:     post
 title:      "一些练习"
 subtitle:   "展示"
 date:       2016-06-30
-author:     "nan"
+author:     "xuclin"
 header-img: "img/home-bg-art.jpg"
 catalog:    true
 tags:

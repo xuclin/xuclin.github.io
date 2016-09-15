@@ -4,7 +4,7 @@ title:      "Example Post using Keynote Layout"
 subtitle:   "Keynote: JavaScript Modularization Journey"
 iframe:     "http://huangxuan.me/js-module-7day/"
 date:       2016-04-09
-author:     "nan"
+author:     "xuckin"
 header-img: "img/post-bg-js-version.jpg"
 tags:
     - 前端开发

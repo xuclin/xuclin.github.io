@@ -3,7 +3,7 @@ layout:     post
 title:      "Git命令"
 subtitle:   "30 分钟 git 命令入门"
 date:       2016-06-30
-author:     "nan"
+author:     "xuclin"
 header-img: "img/post-git.jpg"
 catalog:    true
 tags:
