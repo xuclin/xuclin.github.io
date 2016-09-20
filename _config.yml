@@ -52,7 +52,7 @@ kramdown:
 # Duoshuo settings
 duoshuo_username: xuclin
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+duoshuo_share: false                     # set to false if you want to use Comment without Sharing
 
 
 
@@ -69,7 +69,7 @@ ba_track_id: 33239a68fe999b28c08d74eaba725320
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "千里之行，始于足下"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/icon_wechat.png     # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
